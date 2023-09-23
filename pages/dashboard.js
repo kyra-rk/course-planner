@@ -3,22 +3,30 @@ import styles from '../styles/Home.module.css';
 import {Button} from '../node_modules/@nextui-org/button'
 import { useState } from 'react';
 import {  Dropdown,  DropdownTrigger,  DropdownMenu,  DropdownSection,  DropdownItem} from '../node_modules/@nextui-org/dropdown';
-export default function Home() {
+import SearchBar from "./search-bar.js";
+
+export default function Dashboard() {
     // javascript code goes here 
-    const [major, setMajor] = useState(null);
+    const name = "Kyra Ramesh Krishna";
+    const uni = "kr3026";
+    const major = "Computer Science";
+    const college = "Barnard College";
+
     return (
       <div className={styles.container}>
         <Head>
           <title>Create Next App</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-  
+        <div>
+        </div>
         <main>
           <h1 className={styles.title}>
             Welcome to <a href="https://nextjs.org">Columbia Course Compass!</a>
           </h1>
-          <div className={styles.grid}>
-          <Dropdown>
+          <div className={styles.gridcontainer}>
+          <SearchBar className={styles.griditem}/>
+          <Dropdown className={styles.griditem}>
           <DropdownTrigger>
             <Button className={styles.button}>
               Choose a Major
@@ -36,7 +44,7 @@ export default function Home() {
           </DropdownMenu>
         </Dropdown>
   
-        <Dropdown>
+        <Dropdown className={styles.griditem}>
           <DropdownTrigger>
             <Button className={styles.button}>
               Add a Course

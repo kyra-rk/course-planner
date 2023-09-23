@@ -38,14 +38,22 @@
   font-size: 1.5rem;
 }
 
-.grid {
-  display: flex;
+.gridcontainer {
+  display: grid;
   align-items: center;
-  justify-content: center;
+  grid-gap: 4em;
+  grid-template-columns: repeat(3,200px);
+  /* text-align: center; */
+  justify-content: space-between;
   flex-wrap: wrap;
 
   max-width: 800px;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
+  /* padding-right: 10px; */
+}
+
+.griditem {
+  padding: 10px;
 }
 
 .card {
