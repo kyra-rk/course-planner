@@ -2,17 +2,24 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import {Button} from '../node_modules/@nextui-org/button'
 import { useState } from 'react';
+import {View, Text, TextInput}  from '../node_modules/react';
+import { Router, Route, Switch } from '../node_modules/react-dom';
 import {  Dropdown,  DropdownTrigger,  DropdownMenu,  DropdownSection,  DropdownItem} from '../node_modules/@nextui-org/dropdown';
 export default function Home() {
+  const [major, setMajor] = useState(null);
+  const [school, setSchool] = useState(null);
+  const [name, setName] = useState(null);
+  const [uni, setUni] = useState(null);
   return(
     <main> 
        <h1 className={styles.title}> Welcome to <b>Columbia Course Compass!</b> </h1>
        <div className={styles.title}>
-        <c> Name: </c>
-        <input type="text"/>
+        <c>Name: </c>
+        <input type="text" value={name}/>
+      
         </div>
        <div className={styles.title}>
-        <c> UNI: </c>
+        <c>UNI: </c>
         <input type="text"/>
         </div>
        <div className={styles.title}>
@@ -23,11 +30,11 @@ export default function Home() {
               </Button>
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions"
-              onAction={(key) => setMajor(key)}
+              onAction={(key) => setSchool(key)}
             >
-              <DropdownItem key="SEAS">School of Engineering and Applied Science</DropdownItem>
-              <DropdownItem key="CC">Columbia College/General Studies</DropdownItem>
               <DropdownItem key="BN">Barnard</DropdownItem>
+              <DropdownItem key="CC">Columbia College/General Studies</DropdownItem>
+              <DropdownItem key="SEAS">School of Engineering and Applied Science</DropdownItem>
             </DropdownMenu>
             </Dropdown>
         </div>
@@ -63,8 +70,8 @@ export default function Home() {
             </Dropdown>
         </div>
         <div className={styles.title}>
-        <Button className={styles.button} text="Submit" onClick={() => console.log("Button clicked!")}>
-          Submit
+        <Button className={styles.button} text="Submit" onClick={() => console.log()}>
+        <a href="/dashboard">Submit</a>
         </Button>
         </div>
         
