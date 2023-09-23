@@ -1,8 +1,11 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import {Button} from '../node_modules/@nextui-org/button'
+import { useState } from 'react';
 import {  Dropdown,  DropdownTrigger,  DropdownMenu,  DropdownSection,  DropdownItem} from '../node_modules/@nextui-org/dropdown';
 export default function Home() {
+  // javascript code goes here 
+  const [major, setMajor] = useState(null);
   return (
     <div className={styles.container}>
       <Head>
@@ -14,21 +17,45 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Columbia Course Compass!</a>
         </h1>
-          <Dropdown>
+        <div className={styles.grid}>
+        <Dropdown>
         <DropdownTrigger>
-          <Button>
-            Open Menu
+          <Button className={styles.button}>
+            Choose a Major
           </Button>
         </DropdownTrigger>
-        <DropdownMenu aria-label="Static Actions">
+        <DropdownMenu aria-label="Static Actions"
+          onAction={(key) => setMajor(key)}
+        >
+          <DropdownItem key="COMS">Computer Science</DropdownItem>
+          <DropdownItem key="MATH">Mathematics</DropdownItem>
+          <DropdownItem key="STAT">Statistics</DropdownItem>
+          <DropdownItem key="ENG" className="text-danger" color="danger">
+            English
+          </DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
+
+      <Dropdown>
+        <DropdownTrigger>
+          <Button className={styles.button}>
+            Add a Course
+          </Button>
+        </DropdownTrigger>
+        <DropdownMenu aria-label="Static Actions"
+          onAction={(key) => setAdd(key)}
+        >
           <DropdownItem key="COMS3134">COMS3134</DropdownItem>
-          <DropdownItem key="COMS1004">COMS1004k</DropdownItem>
+          <DropdownItem key="COMS1004">COMS1004</DropdownItem>
           <DropdownItem key="COMS3157">COMS3157</DropdownItem>
           <DropdownItem key="CSEE3827" className="text-danger" color="danger">
             CSEE3827
           </DropdownItem>
         </DropdownMenu>
       </Dropdown>
+      </div>
+
+      <p> Your major is {major} </p>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
