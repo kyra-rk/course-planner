@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-
+import {Button} from '../node_modules/@nextui-org/button'
+import {  Dropdown,  DropdownTrigger,  DropdownMenu,  DropdownSection,  DropdownItem} from '../node_modules/@nextui-org/dropdown';
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -11,12 +12,23 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://nextjs.org">Columbia Course Compass!</a>
         </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
+          <Dropdown>
+        <DropdownTrigger>
+          <Button>
+            Open Menu
+          </Button>
+        </DropdownTrigger>
+        <DropdownMenu aria-label="Static Actions">
+          <DropdownItem key="COMS3134">COMS3134</DropdownItem>
+          <DropdownItem key="COMS1004">COMS1004k</DropdownItem>
+          <DropdownItem key="COMS3157">COMS3157</DropdownItem>
+          <DropdownItem key="CSEE3827" className="text-danger" color="danger">
+            CSEE3827
+          </DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
