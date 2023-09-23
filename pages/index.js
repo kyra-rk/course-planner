@@ -8,6 +8,14 @@ export default function Home() {
     <main> 
        <h1 className={styles.title}> Welcome to <b>Columbia Course Compass!</b> </h1>
        <div className={styles.title}>
+        <c> Name: </c>
+        <input type="text"/>
+        </div>
+       <div className={styles.title}>
+        <c> UNI: </c>
+        <input type="text"/>
+        </div>
+       <div className={styles.title}>
             <Dropdown>
             <DropdownTrigger>
               <Button className={styles.button}>
@@ -23,6 +31,7 @@ export default function Home() {
             </DropdownMenu>
             </Dropdown>
         </div>
+        
         <div className={styles.title}>
             <Dropdown>
             <DropdownTrigger>
@@ -53,11 +62,20 @@ export default function Home() {
             </DropdownMenu>
             </Dropdown>
         </div>
+        <div className={styles.title}>
+        <Button className={styles.button} text="Submit" onClick={() => console.log("Button clicked!")}>
+          Submit
+        </Button>
+        </div>
+        
       <style jsx global>{`
               body { }
               b {
                 color: blue;
                 font-weight: 700;
+              }
+              c{
+                font-size: 20px;
               }
       `}</style>
     
@@ -65,4 +83,5 @@ export default function Home() {
     
     
   );
+ 
 }
