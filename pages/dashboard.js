@@ -7,6 +7,7 @@ import SearchBar from "./search-bar.js";
 import core_req from "./data/CoreRequirements.json"
 import area_found from "./data/AreaFoundations.json"
 import electives from "./data/Electives.json"
+import RecommendationButton from './RecommendationButton';
 
 export default function Dashboard() {
     // javascript code goes here 
@@ -34,7 +35,8 @@ export default function Dashboard() {
           <SearchBar className={styles.griditem} title="Elective Requirements" data={electives}/>
         </div>
 
-  
+        <RecommendationButton className={styles.button}>{"Generate Recommendations"}</RecommendationButton>
+        
         </main>
   
         <footer>
