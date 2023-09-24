@@ -29,8 +29,8 @@ export default function Dashboard() {
           </h1>
           <h2> Your major is <span className={styles.italic}>{major}</span>.</h2>
           <div className={styles.gridcontainer}>
-          <SearchBar className={styles.griditem} title="CS & Math Core Requirements" data={core_req}/>
-          <SearchBar className={styles.griditem} title="Area Foundation Courses" data={area_found}/>
+          <SearchBar className={styles.griditem} title="Core Requirements" data={core_req}/>
+          <SearchBar className={styles.griditem} title="Area Foundation" data={area_found}/>
           <SearchBar className={styles.griditem} title="Elective Requirements" data={electives}/>
         </div>
 
