@@ -4,7 +4,7 @@ import List from "./List";
 import DropdownSearch from "./DropdownSearch";
 // import "../styles/search-bar.css";
 
-function SearchBar() {
+function SearchBar(props) {
     const [inputText, setInputText] = useState("");
     const [course, setCourse] = useState("");
     let inputHandler = (e) => {
@@ -14,7 +14,7 @@ function SearchBar() {
     }
   return (
     <div className="main">
-      <h1>React Search</h1>
+      <h1>{props.title}</h1>
       <div className="search">
         <TextField
           id="outlined-basic"

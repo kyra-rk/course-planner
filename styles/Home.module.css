@@ -100,5 +100,25 @@
 }
 
 .button {
+  background-color: lightblue;
   padding: 5px;
+  margin: 5px;
+  border: transparent;
+  border-radius: 5px;
+  width: 90%;
+  /* text-align: left; */
+}
+
+.buttonTaken {
+  background-color: lightgreen;
+  padding: 5px;
+  margin: 5px;
+  border: transparent;
+  border-radius: 5px;
+  width: 90%;
+  /* text-align: left; */
+}
+
+.ul {
+  padding-inline-start: 0px;
 }

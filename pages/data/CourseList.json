@@ -1,0 +1,25 @@
+[{
+    "id": 1,
+    "course_num": "COMS1004",
+    "course_name": "Intro to Java"
+}, {
+    "id": 2,
+    "course_num": "COMS3134", 
+    "course_name": "Data Structures in Java"
+}, {
+    "id": 3,
+    "course_num": "COMS3157", 
+    "course_name": "Advanced Programming"
+}, {
+    "id": 4,
+    "course_num": "COMS3203", 
+    "course_name": "Discrete Mathematics"
+}, {
+    "id": 5,
+    "course_num": "COMS3261", 
+    "course_name": "CS Theory"
+},{
+    "id": 6,
+    "course_num": "COMS3827", 
+    "course_name": "Fundamentals of Computer Systems"
+}] 
