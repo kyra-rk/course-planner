@@ -8,18 +8,22 @@
     "course_name": "Data Structures in Java"
 }, {
     "id": 3,
-    "course_num": "COMS3157", 
+    "course_num": "COMSW3157", 
     "course_name": "Advanced Programming"
 }, {
     "id": 4,
-    "course_num": "COMS3203", 
+    "course_num": "COMSW3203", 
     "course_name": "Discrete Mathematics"
 }, {
     "id": 5,
-    "course_num": "COMS3261", 
+    "course_num": "COMSW3261", 
     "course_name": "CS Theory"
 },{
     "id": 6,
-    "course_num": "COMS3827", 
+    "course_num": "COMSW3827", 
     "course_name": "Fundamentals of Computer Systems"
+},{
+    "id": 7,
+    "course_num": "MATHUN2010", 
+    "course_name": "Linear Algebra"
 }] 

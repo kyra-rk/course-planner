@@ -4,6 +4,9 @@ import {Button} from '../node_modules/@nextui-org/button'
 import { useState } from 'react';
 import {  Dropdown,  DropdownTrigger,  DropdownMenu,  DropdownSection,  DropdownItem} from '../node_modules/@nextui-org/dropdown';
 import SearchBar from "./search-bar.js";
+import core_req from "./data/CoreRequirements.json"
+import area_found from "./data/AreaFoundations.json"
+import electives from "./data/Electives.json"
 
 export default function Dashboard() {
     // javascript code goes here 
@@ -15,53 +18,23 @@ export default function Dashboard() {
     return (
       <div className={styles.container}>
         <Head>
-          <title>Create Next App</title>
+          <title>Columbia Course Compass</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div>
         </div>
         <main>
           <h1 className={styles.title}>
-            Welcome to <a href="https://nextjs.org">Columbia Course Compass!</a>
+            Welcome to <span className={styles.colored}>Columbia Course Compass!</span>
           </h1>
+          <h2> Your major is <span className={styles.italic}>{major}</span>.</h2>
           <div className={styles.gridcontainer}>
-          <SearchBar className={styles.griditem} title="CS & Math Core Requirements"/>
-          <SearchBar className={styles.griditem} title="Area Foundation Courses"/>
-          <SearchBar className={styles.griditem} title="Elective Requirements"/>
-          <h1>Elective Requirements</h1>
+          <SearchBar className={styles.griditem} title="CS & Math Core Requirements" data={core_req}/>
+          <SearchBar className={styles.griditem} title="Area Foundation Courses" data={area_found}/>
+          <SearchBar className={styles.griditem} title="Elective Requirements" data={electives}/>
         </div>
+
   
-        <p> Your major is {major} </p>
-  
-          <div className={styles.grid}>
-            <a href="https://nextjs.org/docs" className={styles.card}>
-              <h3>Documentation &rarr;</h3>
-              <p>Find in-depth information about Next.js features and API.</p>
-            </a>
-  
-            <a href="https://nextjs.org/learn" className={styles.card}>
-              <h3>Learn &rarr;</h3>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
-  
-            <a
-              href="https://github.com/vercel/next.js/tree/canary/examples"
-              className={styles.card}
-            >
-              <h3>Examples &rarr;</h3>
-              <p>Discover and deploy boilerplate example Next.js projects.</p>
-            </a>
-  
-            <a
-              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={styles.card}
-            >
-              <h3>Deploy &rarr;</h3>
-              <p>
-                Instantly deploy your Next.js site to a public URL with Vercel.
-              </p>
-            </a>
-          </div>
         </main>
   
         <footer>

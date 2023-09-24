@@ -1,0 +1,29 @@
+[{
+    "id": 19,
+    "course_num": "COMSW4181",
+    "course_name": "Security I"
+}, {
+    "id": 20,
+    "course_num": "COMSW4995-005", 
+    "course_name": "Competitive Programming"
+}, {
+    "id": 21,
+    "course_num": "COMSW3410", 
+    "course_name": "Computers and Societies"
+}, {
+    "id": 22,
+    "course_num": "COMSW4261", 
+    "course_name": "Intro to Cryptography"
+}, {
+    "id": 23,
+    "course_num": "COMSE6118", 
+    "course_name": "Operating Systems II"
+},{
+    "id": 24,
+    "course_num": "COMSW4115", 
+    "course_name": "Programming Languages and Translators"
+},{
+    "id": 25,
+    "course_num": "COMSW4995-001", 
+    "course_name": "Parallel Functional Programming"
+}] 

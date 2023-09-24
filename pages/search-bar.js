@@ -24,7 +24,7 @@ function SearchBar(props) {
           label="Search"
         />
       </div>
-      <List input={inputText}/>
+      <List input={inputText} data={props.data}/>
     </div>
   );
 }

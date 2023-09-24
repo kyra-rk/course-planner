@@ -1,5 +1,4 @@
 import { React, useState } from 'react'
-import data from "./data/CourseList.json"
 import { Button } from '@nextui-org/react';
 import styles from '../styles/Home.module.css';
 

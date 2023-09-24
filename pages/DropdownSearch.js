@@ -1,5 +1,5 @@
 import { React, useState } from 'react'
-import data from "./data/CourseList.json"
+import data from "./data/CoreRequirements.json"
 import {  Dropdown,  DropdownTrigger,  DropdownMenu,  DropdownSection,  DropdownItem} from '../node_modules/@nextui-org/dropdown';
 
 

@@ -7,8 +7,9 @@
   align-items: center;
 }
 
-.title a {
-  color: #0070f3;
+.colored{
+  color: darkblue;
+  /* font-style: italic; */
   text-decoration: none;
 }
 
@@ -38,6 +39,11 @@
   font-size: 1.5rem;
 }
 
+.italic{
+  font-style: italic;
+  color: darkblue;
+}
+
 .gridcontainer {
   display: grid;
   align-items: center;
@@ -45,6 +51,7 @@
   grid-template-columns: repeat(3,200px);
   /* text-align: center; */
   justify-content: space-between;
+  align-items: start;
   flex-wrap: wrap;
 
   max-width: 800px;
