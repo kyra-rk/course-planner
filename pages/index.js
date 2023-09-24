@@ -11,22 +11,23 @@ export default function Home() {
   const [name, setName] = useState(null);
   const [uni, setUni] = useState(null);
   return(
-    <main> 
-       <h1 className={styles.title}> Welcome to <b>Columbia Course Compass!</b> </h1>
-       <div className={styles.title}>
+    <main className={styles.title}> 
+    <h1 className="welcome-to-columbia"><b> Welcome to Columbia Course Compass!</b> </h1>
+
+      <div className={styles.box}>
+
+
         <c>Name: </c>
         <input type="text" value={name}/>
-      
-        </div>
-       <div className={styles.title}>
+        <div></div>
         <c>UNI: </c>
         <input type="text"/>
-        </div>
-       <div className={styles.title}>
+        <div></div>
+       <div>
             <Dropdown>
             <DropdownTrigger>
               <Button className={styles.button}>
-                Choose your School
+                <c>Choose your School</c>
               </Button>
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions"
@@ -39,11 +40,11 @@ export default function Home() {
             </Dropdown>
         </div>
         
-        <div className={styles.title}>
+        <div>
             <Dropdown>
             <DropdownTrigger>
               <Button className={styles.button}>
-                Select your Major
+                <c>Select your Major</c>
               </Button>
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions"
@@ -69,23 +70,37 @@ export default function Home() {
             </DropdownMenu>
             </Dropdown>
         </div>
-        <div className={styles.title}>
+        <div>
         <Button className={styles.button} text="Submit" onClick={() => console.log()}>
-        <a href="/dashboard">Submit</a>
+        <a href="/dashboard"><c>Submit</c></a>
         </Button>
         </div>
         
       <style jsx global>{`
-              body { }
+              body { 
+                background-color: #8ccae7;
+              }
               b {
-                color: blue;
+                color: rgb(0,45,106);
+                font-weight: 700;
+                font-family: "Inter-Bold", Helvetica;
+                font-size: 64px;
                 font-weight: 700;
               }
               c{
+                font-family: "Inter-Bold", Helvetica;
                 font-size: 20px;
               }
+              
       `}</style>
     
+
+
+
+
+      </div>
+       
+       
     </main>
     
     
