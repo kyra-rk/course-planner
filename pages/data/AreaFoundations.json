@@ -1,0 +1,45 @@
+[{
+    "id": 8,
+    "course_num": "COMSW411",
+    "course_name": "Intro to Databases"
+}, {
+    "id": 9,
+    "course_num": "COMSW4113", 
+    "course_name": "Distributed System Fundamentals"
+}, {
+    "id": 10,
+    "course_num": "COMSW4118", 
+    "course_name": "Operating Systems I"
+}, {
+    "id": 11,
+    "course_num": "CSEEW4119", 
+    "course_name": "Computer Networks"
+}, {
+    "id": 12,
+    "course_num": "COMSW4160", 
+    "course_name": "Computer Graphics"
+},{
+    "id": 13,
+    "course_num": "COMSW4170", 
+    "course_name": "User Interface Design"
+},{
+    "id": 14,
+    "course_num": "CSORW4231", 
+    "course_name": "Analysis of Algorithms"
+},{
+    "id": 15,
+    "course_num": "COMSW4701", 
+    "course_name": "Artificial Intelligence"
+},{
+    "id": 16,
+    "course_num": "COMSW4705", 
+    "course_name": "Natural Language Processing"
+},{
+    "id": 17,
+    "course_num": "COMSW4771", 
+    "course_name": "Machine Learning"
+},{
+    "id": 18,
+    "course_num": "CSEEW4824", 
+    "course_name": "Computer Architechture"
+}] 
