@@ -37,11 +37,13 @@ Create a course review forum for students to share and receive advice on courses
 Connect to Vergil and extract classes from the transcript so that students don’t have to manually add their courses.
 
 # <bold>Environment Set Up</bold>
-brew install tree  <br>
-npm install -g npm@10.1.0  <br>
-npm install -D tailwindcss postcss autoprefixer\n  <br>
-npm install primereact\n  <br>
-npm install next@latest react@latest react-dom@latest  <br>
-npm install react-dropdown  --save  <br>
-npm uninstall tailwindcss postcss autoprefixer\n  <br>
-npm install tailwindcss@latest postcss@latest autoprefixer@latest  <br>
+npm install -g npm <br>
+npm install -g npm@10.1.0 <br>
+npm install primereact\n <br>
+npm install next@latest react@latest react-dom@latest <br>
+npm install react-dropdown  --save <br>
+npm uninstall tailwindcss postcss autoprefixer\n (if already installed) <br>
+npm install tailwindcss@latest postcss@latest autoprefixer@latest <br>
+npm install @mui/material\n <br>
+npm install @emotion/react <br>
+npm install @emotion/styled <br>
