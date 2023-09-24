@@ -329,8 +329,8 @@
   width: 599px;
 }
 .label {
-  height: 82px;
-  width: 494px;
+  height: 80px;
+  width: 300px;
 }
 
 .label .text-wrapper {
@@ -345,4 +345,11 @@
   text-align: center;
   top: 0;
   width: 494px;
+}
+
+.lab {
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 20px;
+  height: 80px;
+  width: 300px;
 }

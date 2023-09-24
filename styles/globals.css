@@ -32,7 +32,9 @@ c {
 * {
   box-sizing: border-box;
 }
-
+e{
+  width: 20%;
+}
 img {
   max-width: 100%;
   height: auto;

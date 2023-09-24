@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import {Button} from '../node_modules/@nextui-org/button'
 import { useState } from 'react';
+import TextField from "../node_modules/@mui/material/TextField";
 import {View, Text, TextInput}  from '../node_modules/react';
 import { Router, Route, Switch } from '../node_modules/react-dom';
 import {  Dropdown,  DropdownTrigger,  DropdownMenu,  DropdownSection,  DropdownItem} from '../node_modules/@nextui-org/dropdown';
@@ -10,25 +11,44 @@ export default function Home() {
   const [school, setSchool] = useState(null);
   const [name, setName] = useState(null);
   const [uni, setUni] = useState(null);
+  let inputHandler = (e) => {
+    console.log("input received");
+    var lowerCase = e.target.value.toLowerCase();
+    setInputText(lowerCase);
+}
   return(
     <main className={styles.title}> 
     <h1 className="welcome-to-columbia"><b> Welcome to Columbia Course Compass!</b> </h1>
 
       <div className={styles.box}>
 
-
-        <c>Name: </c>
-        <input type="text" value={name}/>
-        <div></div>
-        <c>UNI: </c>
-        <input type="text"/>
-        <div></div>
+        <div className={styles.lab}><c>Login</c></div>
+        <e>
+        <TextField className={styles.label}
+          id="outlined-basic"
+          onChange={inputHandler}
+          variant="outlined"
+          fullWidth
+          label="Name"
+        />
+        </e>
+        <e>
+        <TextField className={styles.label}
+          id="outlined-basic"
+          onChange={inputHandler}
+          variant="outlined"
+          fullWidth
+          label="UNI"
+        />
+        </e>
        <div>
-            <Dropdown>
+       <div>
+            <Dropdown className={styles.button}>
             <DropdownTrigger>
               <Button className={styles.button}>
                 <c>Choose your School</c>
               </Button>
+              
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions"
               onAction={(key) => setSchool(key)}
@@ -36,12 +56,14 @@ export default function Home() {
               <DropdownItem key="BN">Barnard</DropdownItem>
               <DropdownItem key="CC">Columbia College/General Studies</DropdownItem>
               <DropdownItem key="SEAS">School of Engineering and Applied Science</DropdownItem>
+
             </DropdownMenu>
             </Dropdown>
+            </div>
         </div>
         
         <div>
-            <Dropdown>
+            <Dropdown className={styles.button}>
             <DropdownTrigger>
               <Button className={styles.button}>
                 <c>Select your Major</c>
@@ -90,6 +112,9 @@ export default function Home() {
               c{
                 font-family: "Inter-Bold", Helvetica;
                 font-size: 20px;
+              }
+              e{
+                width: 20%;
               }
               
       `}</style>
