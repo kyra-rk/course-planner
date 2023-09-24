@@ -1,4 +1,4 @@
-<bold> What is Columbia Course Campus? </bold>
+# <bold> What is Columbia Course Campus? </bold>
 
 ## Inspiration
 
@@ -36,7 +36,7 @@ Reduce hallucinations made by the Cohere LLM with more prompt engineering.
 Create a course review forum for students to share and receive advice on courses to take. 
 Connect to Vergil and extract classes from the transcript so that students don’t have to manually add their courses.
 
-<bold>Environment Set Up</bold>
+# <bold>Environment Set Up</bold>
 brew install tree
 npm install -g npm@10.1.0
 npm install -D tailwindcss postcss autoprefixer\n
