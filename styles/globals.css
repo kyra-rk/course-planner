@@ -25,6 +25,10 @@ a {
 b {
   color: blue;
 }
+
+c {
+  font-size: 30px;
+}
 * {
   box-sizing: border-box;
 }
