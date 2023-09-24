@@ -28,20 +28,20 @@ While we came across several challenges along the way, we faced them all with a 
 We learned how to create the frontend and manage the backend using React.js. A few of us had to learn JavaScript, HTML, CSS from scratch. We learned how to create an API key and use it to prompt LLM engines. We learned how to manage packages and environments with GitHub. 
 
 ## What's next for Columbia Course Compass
-In the future, we hope to:
-Add all courses and majors offered at all 4 schools (CC, BC, SEAS, GS), so that everyone across all schools at Columbia can use our platform too. 
-Automate web-scraping to capture all major/minor/concentration courses and information. 
-Add progress bars / pie charts to our dashboard so users can see how much progress they have made with their major requirements.
-Reduce hallucinations made by the Cohere LLM with more prompt engineering.
-Create a course review forum for students to share and receive advice on courses to take. 
+In the future, we hope to: <br>
+Add all courses and majors offered at all 4 schools (CC, BC, SEAS, GS), so that everyone across all schools at Columbia can use our platform too.  <br>
+Automate web-scraping to capture all major/minor/concentration courses and information.  <br>
+Add progress bars / pie charts to our dashboard so users can see how much progress they have made with their major requirements.  <br>
+Reduce hallucinations made by the Cohere LLM with more prompt engineering.  <br>
+Create a course review forum for students to share and receive advice on courses to take. <br>
 Connect to Vergil and extract classes from the transcript so that students don’t have to manually add their courses.
 
 # <bold>Environment Set Up</bold>
-brew install tree
-npm install -g npm@10.1.0
-npm install -D tailwindcss postcss autoprefixer\n
-npm install primereact\n
-npm install next@latest react@latest react-dom@latest
-npm install react-dropdown  --save
-npm uninstall tailwindcss postcss autoprefixer\n
-npm install tailwindcss@latest postcss@latest autoprefixer@latest
+brew install tree  <br>
+npm install -g npm@10.1.0  <br>
+npm install -D tailwindcss postcss autoprefixer\n  <br>
+npm install primereact\n  <br>
+npm install next@latest react@latest react-dom@latest  <br>
+npm install react-dropdown  --save  <br>
+npm uninstall tailwindcss postcss autoprefixer\n  <br>
+npm install tailwindcss@latest postcss@latest autoprefixer@latest  <br>
