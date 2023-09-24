@@ -22,12 +22,15 @@
 .title {
   margin: 0 0 1rem;
   line-height: 1.15;
-  font-size: 3.6rem;
+  font-size: 2rem;
+  text-align: center;
+  
+  height: 100px;
+  position: relative;
+  width: 1512px;
 }
 
-.title {
-  text-align: center;
-}
+
 
 .title,
 .description {
@@ -128,4 +131,218 @@
 
 .ul {
   padding-inline-start: 0px;
+}
+
+.login-screen {
+  background-color: #8ccae7;
+  text-align: center;
+  width: 100%;
+  
+}
+
+.login-screen .div {
+  background-color: #8ccae7;
+  height: 982px;
+  position: relative;
+  width: 1512px;
+}
+
+.login-screen .welcome-to-columbia {
+  color: rgb(15, 177, 218);
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 64px;
+  font-weight: 700;
+  left: 299px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 38px;
+  width: 914px;
+}
+
+.login-screen .overlap-group {
+  border-radius: 30px;
+  height: 641px;
+  left: 456px;
+  position: absolute;
+  top: 251px;
+  width: 599px;
+}
+
+.login-screen .rectangle {
+  background-color: #ffffff;
+  border-radius: 30px;
+  height: 641px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 599px;
+}
+
+.login-screen .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 48px;
+  font-weight: 700;
+  left: 53px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 41px;
+  width: 494px;
+}
+
+.login-screen .rectangle-2 {
+  background-color: #d9d9d9;
+  height: 60px;
+  left: 67px;
+  position: absolute;
+  top: 154px;
+  width: 457px;
+}
+
+.login-screen .text-wrapper-2 {
+  color: #000000;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 67px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 336px;
+  white-space: nowrap;
+  width: 124px;
+}
+
+.login-screen .text-wrapper-3 {
+  color: #000000;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 67px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 439px;
+  white-space: nowrap;
+  width: 124px;
+}
+
+.login-screen .rectangle-3 {
+  background-color: #d9d9d9;
+  height: 60px;
+  left: 67px;
+  position: absolute;
+  top: 257px;
+  width: 457px;
+}
+
+.login-screen .rectangle-4 {
+  background-color: #d9d9d9;
+  height: 60px;
+  left: 67px;
+  position: absolute;
+  top: 360px;
+  width: 457px;
+}
+
+.login-screen .rectangle-5 {
+  background-color: #d9d9d9;
+  height: 60px;
+  left: 67px;
+  position: absolute;
+  top: 463px;
+  width: 457px;
+}
+
+.login-screen .text-wrapper-4 {
+  color: #000000;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 67px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 130px;
+  white-space: nowrap;
+  width: 124px;
+}
+
+.login-screen .text-wrapper-5 {
+  color: #000000;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  left: 67px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 233px;
+  white-space: nowrap;
+  width: 124px;
+}
+
+.login-screen .rectangle-6 {
+  background-color: #235780;
+  border-radius: 30px;
+  height: 51px;
+  left: 146px;
+  position: absolute;
+  top: 554px;
+  width: 283px;
+}
+
+.login-screen .text-wrapper-6 {
+  color: #ffffff;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 30px;
+  font-weight: 700;
+  height: 51px;
+  left: 185px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 553px;
+  width: 209px;
+}
+.box {
+  background-color: #ffffff;
+  border-radius: 30px;
+  height: 400px;
+  margin-left:500px;
+  width: 400px;
+  
+}
+
+.box .rectangle {
+  background-color: #ffffff;
+  border-radius: 30px;
+  height: 641px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 599px;
+}
+.label {
+  height: 82px;
+  width: 494px;
+}
+
+.label .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 48px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 494px;
 }

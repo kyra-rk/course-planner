@@ -1,5 +1,5 @@
 import { React, useState } from 'react'
-import { Button } from '@nextui-org/react';
+import { Button } from '../node_modules/@nextui-org/button';
 import styles from '../styles/Home.module.css';
 import { createStore } from 'state-pool';
 import { Cohere } from "langchain/llms/cohere";
